@@ -1,0 +1,123 @@
+.noto-sans-kr {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+}
+
+.nav-item {
+    height: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 2rem;
+}
+
+#nav-header {
+    display: flex;
+    gap: 51px;
+}
+
+.t1-rogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 46.8rem;
+}
+
+.t1-rogo > img {
+    width: 80%;
+}
+
+.section > div{
+    overflow: hidden;
+}
+
+.section input[id*="slide"] {
+    display:none;
+}
+
+/* 블럭요소 가운데 정렬 및, 화면 1200으로 지정 */
+.section .slidwrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* 영역이 넘어갔을 시 안보이는 가리는 것*/
+    overflow: hidden;
+}
+/* ul에 준 slidelist를 선택*/
+.section .slidelist {
+    /* 안쪽 인라인 요소들의 줄바꿈을 없애게 하는 속성을 줌 */
+    white-space: nowrap;
+    /* 안쪽 빈 여백  없애기*/
+    font-size: 0;
+    position: relative;
+}
+
+.section .slidelist > li {
+    /* 세로정렬을 가운데로  가로를 부모요소를 가득 채우게 */
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    /* 자연스러운 애니메이션을 위해 전체옵션, 5초로*/
+    transition: all .5s;
+}
+
+.section .slidelist > li > a {
+    /* 안쪽 컨텐츠 다 담을 수 있게 */
+    display: block;
+    /* 버튼으로 사용할 label 태그를 자율배치 시킬건데 기준점을 잡기위해 */
+    position: relative;
+}
+
+.section .slidelist > li > a img {
+    /* 가로 100% 반응형으로 사용할 수 있다.*/
+    width: 100%;
+    
+}
+
+.section .slide-control label{
+    /* 자율배치 */
+    position: absolute;
+    /* 우선순위는 10, 위쪽으로 50 */
+    z-index: 1;
+    top: 50%;
+    /* 자신을 기준으로 높이의 반만큼 위쪽으로 당기는 값을 줘서 세로 중앙배치 */
+    transform:translateY(-50%);
+    /* 클릭할 수 있는 크기를 줌 */
+    padding: 50px;
+    cursor: pointer;
+}
+
+.section .slidelist .left {
+    /* 왼쪽 기준 30, 화살표 이미지 삽입 */
+    left: 30px;
+    /* background: url(left.png) center center / 100% no-repeat; */
+}
+
+.section .slidelist .right {
+    /* 오른쪽 기준 30, 화살표 이미지 삽입 */
+    right: 30px;
+    /* background: url(right.png) center center / 100% no-repeat; */
+}
+/* 체크가 되면 li의 대해 스타일을 부여, 자신을 기준으로 x = 0; 이 값으로 첫번째가 체크가 되면 보여지게 된다. */
+.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+/* 두번째가 체크가 되면 x가 -100% 당겨진다. 두번째 li가 보여지게 된다. */
+.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+/* 세번째가 체크가 되면 x가 -200% 당겨진다. 세번째 li가 보여지게 된다. */
+.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+
+.section .slide-control [class*="control"] {display: none;}
+.section [id="slide01"]:checked ~ .slidewrap .control01 {display: block;}
+.section [id="slide02"]:checked ~ .slidewrap .control02 {display: block;}
+.section [id="slide03"]:checked ~ .slidewrap .control03 {display: block;}
+
+
