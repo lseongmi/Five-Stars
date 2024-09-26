@@ -160,3 +160,26 @@ input[id="slide03"]:checked ~ .slidewrap .dots label[for="slide03"] {
     background-color: #F20505; /* Active dot color */
 }
 
+.main {
+    margin-top: 7rem;
+    text-align: center;
+}
+.title > .title-text {
+    font-size: 60px;
+    margin-bottom: 1rem;
+}
+
+.hashtag {
+    font-size: 15px;
+    padding-bottom: 5rem;
+}
+
+hr {
+    width: 50%;
+    border: 1px solid black;
+}
+.page-details {
+    padding-top: 5rem;
+    font-size: 25px;
+}
+

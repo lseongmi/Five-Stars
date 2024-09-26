@@ -1,0 +1,49 @@
+.logo-history {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin-bottom: 20rem;
+}
+
+.logo-history > .logo-img {
+    text-align: center;
+}
+
+.logo-history > .logo-img > img {
+   width: 100%;
+}
+
+.logo-history > .logo-img > div {
+   margin-top: 10%;
+}
+
+.logo-history > .logo-img > .logo-2019 {
+    margin-top: 20%;
+}
+
+.section-main > .page-details {
+    margin-bottom: 1rem;
+}
+
+.section-main {
+    text-align: center;
+    
+}
+
+.section-main > a > img {
+    width: 100%;
+}
+
+#world {
+    margin-bottom: 20rem;
+}
+
+#lcksummer {
+    margin-bottom: 15rem;
+}
+
+
+
+
