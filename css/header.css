@@ -63,11 +63,10 @@ nav {
 }
 
 .section .slidelist > li {
-    /* 세로정렬을 가운데로  가로를 부모요소를 가득 채우게 */
+    position: relative; /* header-text가 이 요소를 기준으로 위치하도록 설정 */
     display: inline-block;
     vertical-align: middle;
     width: 100%;
-    /* 자연스러운 애니메이션을 위해 전체옵션, 5초로*/
     transition: all .5s;
 }
 
@@ -76,6 +75,20 @@ nav {
     display: block;
     /* 버튼으로 사용할 label 태그를 자율배치 시킬건데 기준점을 잡기위해 */
     position: relative;
+}
+
+.header-text {
+    position: absolute;
+    top: 70%;
+    left: 65%; 
+    color: white; 
+    font-size: 2rem;
+    z-index: 10;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.color {
+    color: #F20505;
 }
 
 .section .slidelist > li > a img {
@@ -99,15 +112,15 @@ nav {
 
 .section .slidelist .left {
     /* 왼쪽 기준 30, 화살표 이미지 삽입 */
-    left: 30px;
-    /* background: url(left.png) center center / 100% no-repeat; */
+    left: 10px;
+    background: url(../img/left.png) center center / 30% no-repeat;
 }
 
 .section .slidelist .right {
     /* 오른쪽 기준 30, 화살표 이미지 삽입 */
-    right: 30px;
-    /* background: url(right.png) center center / 100% no-repeat; */
-}
+    right: 10px;
+   background: url(../img/right.png) center center / 30% no-repeat;
+} 
 /* 체크가 되면 li의 대해 스타일을 부여, 자신을 기준으로 x = 0; 이 값으로 첫번째가 체크가 되면 보여지게 된다. */
 .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
 /* 두번째가 체크가 되면 x가 -100% 당겨진다. 두번째 li가 보여지게 된다. */
@@ -120,4 +133,30 @@ nav {
 .section [id="slide02"]:checked ~ .slidewrap .control02 {display: block;}
 .section [id="slide03"]:checked ~ .slidewrap .control03 {display: block;}
 
+.section .dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* 이미지보다 위에 위치하도록 충분히 큰 값 */
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #D9D9D9; /* Default dot color */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* 선택된 슬라이드의 dot 색상 변경 */
+input[id="slide01"]:checked ~ .slidewrap .dots label[for="slide01"],
+input[id="slide02"]:checked ~ .slidewrap .dots label[for="slide02"],
+input[id="slide03"]:checked ~ .slidewrap .dots label[for="slide03"] {
+    background-color: #F20505; /* Active dot color */
+}
 
