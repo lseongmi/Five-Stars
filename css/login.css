@@ -1,0 +1,86 @@
+.noto-sans-kr {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    margin: 0;
+}
+
+header {
+    text-align: left;
+    font-size: 30px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 389px;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* 바깥 테두리 */
+    border-radius: 6px; /* 바깥 테두리 둥글게 설정 */
+    padding: 2px; /* 테두리와 input 간격 */
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper img {
+    position: absolute;
+    padding-left: 20px; /* 아이콘의 위치를 조정합니다 */
+    width: 5%;
+}
+
+.input-wrapper input {
+    width: 100%;
+    height: 53px;
+    border: none; /* 기본 테두리 제거 */
+    outline: none;
+    padding-left: 50px; /* 아이콘 오른쪽에 공간을 만듦 */
+    box-sizing: border-box; /* 패딩 포함 너비 계산 */
+}
+
+
+#submit {
+    height: 53px;
+    margin-top: 32px;
+    border: 1px solid #000;
+    background-color: #000;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.kakaologin > button {
+    border: 0;
+    background-color: transparent;
+}
+
+.kakaologin > button > img {
+    width: 100%;
+}
+.sign-up {
+    margin-top: 5%;
+    text-align: left;
+    font-size: 13px;
+    color: #ADADAD;
+}
