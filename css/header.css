@@ -51,17 +51,33 @@ nav {
     padding-top: 5px;
     color: #000;
     font-size: 15px;
+
+}
+
+.nav-item-details > li > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-item-details > li > a:hover {
+    color: #f20505;
 }
 
 .t1-rogo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 46.8rem;
+    margin-right: 20%;
 }
 
 .t1-rogo > img {
     width: 80%;
+}
+
+.login {
+    font-size: 10px;
+    display: flex;
+    margin-right: 10px;
 }
 
 .section > div{
