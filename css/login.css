@@ -69,18 +69,3 @@ section {
     margin-bottom: 20px;
     color: #fff;
 }
-
-.kakaologin > button {
-    border: 0;
-    background-color: transparent;
-}
-
-.kakaologin > button > img {
-    width: 100%;
-}
-.sign-up {
-    margin-top: 5%;
-    text-align: left;
-    font-size: 13px;
-    color: #ADADAD;
-}
