@@ -1,3 +1,112 @@
 main > .main > .title > div {
     padding-bottom: 3%;
 }
+
+.musicplayer-section > div {
+    overflow: hidden;
+}
+
+.musicplayer-section input[id*="musicplayer-slide"] {
+    display: none;
+}
+
+/* 블럭요소 가운데 정렬 및, 화면 1200으로 지정 */
+.musicplayer-section .musicplayer-slidewrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* 영역이 넘어갔을 시 안 보이는 가리는 것 */
+    overflow: hidden;
+}
+
+/* ul에 준 musicplayer-slidelist를 선택 */
+.musicplayer-section .musicplayer-slidelist {
+    /* 안쪽 인라인 요소들의 줄바꿈을 없애게 하는 속성을 줌 */
+    white-space: nowrap;
+    /* 안쪽 빈 여백 없애기 */
+    font-size: 0;
+    position: relative;
+}
+
+.musicplayer-section .musicplayer-slidelist > li {
+    /* 세로 정렬을 가운데로, 가로를 부모 요소를 가득 채우게 */
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    /* 자연스러운 애니메이션을 위해 전체 옵션, 5초로 */
+    transition: all .5s;
+}
+
+.musicplayer-section .musicplayer-slidelist > li > a {
+    /* 안쪽 컨텐츠 다 담을 수 있게 */
+    display: block;
+    /* 버튼으로 사용할 label 태그를 자율 배치 시킬건데 기준점을 잡기 위해 */
+    position: relative;
+}
+
+.musicplayer-section .musicplayer-slidelist > li > a img {
+    /* 가로 100% 반응형으로 사용할 수 있다. */
+    width: 100%;
+}
+
+.musicplayer-section .slide-control label {
+    /* 자율 배치 */
+    position: absolute;
+    /* 우선순위는 10, 위쪽으로 50 */
+    z-index: 1;
+    top: 50%;
+    /* 자신을 기준으로 높이의 반만큼 위쪽으로 당기는 값을 줘서 세로 중앙 배치 */
+    transform: translateY(-50%);
+    /* 클릭할 수 있는 크기를 줌 */
+    padding: 50px;
+    cursor: pointer;
+}
+
+.musicplayer-section .slide-control label.musicplayer-left {
+    margin-top: 70%;
+    left: 30px; /* 적절한 값으로 조정 */
+    background: url(../img/left.png) center center / 30% no-repeat;
+}
+
+.musicplayer-section .slide-control label.musicplayer-right {
+    margin-top: 70%;
+    right: 30px; /* 적절한 값으로 조정 */
+    background: url(../img/right.png) center center / 30% no-repeat;
+}
+
+
+/* 각 슬라이드 체크 시 이동 */
+.musicplayer-section input[id=musicplayer-slide01]:checked ~ .musicplayer-slidewrap .musicplayer-slidelist > li {
+    transform: translateX(0%);
+}
+.musicplayer-section input[id=musicplayer-slide02]:checked ~ .musicplayer-slidewrap .musicplayer-slidelist > li {
+    transform: translateX(-100%);
+}
+.musicplayer-section input[id=musicplayer-slide03]:checked ~ .musicplayer-slidewrap .musicplayer-slidelist > li {
+    transform: translateX(-200%);
+}
+.musicplayer-section input[id=musicplayer-slide04]:checked ~ .musicplayer-slidewrap .musicplayer-slidelist > li {
+    transform: translateX(-300%);
+}
+.musicplayer-section input[id=musicplayer-slide05]:checked ~ .musicplayer-slidewrap .musicplayer-slidelist > li {
+    transform: translateX(-400%);
+}
+
+/* 각 슬라이드에 맞는 control 표시 */
+.musicplayer-section .slide-control [class*="control"] {
+    display: none;
+}
+.musicplayer-section [id=musicplayer-slide01]:checked ~ .musicplayer-slidewrap .control01 {
+    display: block;
+}
+.musicplayer-section [id=musicplayer-slide02]:checked ~ .musicplayer-slidewrap .control02 {
+    display: block;
+}
+.musicplayer-section [id=musicplayer-slide03]:checked ~ .musicplayer-slidewrap .control03 {
+    display: block;
+}
+.musicplayer-section [id=musicplayer-slide04]:checked ~ .musicplayer-slidewrap .control04 {
+    display: block;
+}
+.musicplayer-section [id=musicplayer-slide05]:checked ~ .musicplayer-slidewrap .control05 {
+    display: block;
+}
