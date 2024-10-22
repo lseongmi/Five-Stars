@@ -2,8 +2,10 @@ main > .main > .title > div {
     padding-bottom: 3%;
 }
 
-.musicplayer-section > div {
-    overflow: hidden;
+.musicplayer-section {
+    margin-top: 5%;
+    margin-bottom: 20%;
+    text-align: center;
 }
 
 .musicplayer-section input[id*="musicplayer-slide"] {
@@ -28,12 +30,17 @@ main > .main > .title > div {
 }
 
 .musicplayer-section .musicplayer-slidelist > li {
-    /* 세로 정렬을 가운데로, 가로를 부모 요소를 가득 채우게 */
     display: inline-block;
     vertical-align: middle;
     width: 100%;
-    /* 자연스러운 애니메이션을 위해 전체 옵션, 5초로 */
     transition: all .5s;
+    text-align: center; /* 중앙 정렬 */
+}
+
+.musicplayer-section .lyrics {
+    margin-top: 5%; /* 비디오와 가사 사이의 간격 */
+    font-size: 20px; /* 가사 크기 조정 */
+    color: #333; /* 가사 색상 조정 */
 }
 
 .musicplayer-section .musicplayer-slidelist > li > a {
@@ -43,9 +50,10 @@ main > .main > .title > div {
     position: relative;
 }
 
-.musicplayer-section .musicplayer-slidelist > li > a img {
+.musicplayer-section .musicplayer-slidelist > li > a video {
     /* 가로 100% 반응형으로 사용할 수 있다. */
-    width: 100%;
+    width: 70%;
+    height: 100%;
 }
 
 .musicplayer-section .slide-control label {
@@ -63,14 +71,16 @@ main > .main > .title > div {
 
 .musicplayer-section .slide-control label.musicplayer-left {
     margin-top: 70%;
+    width: 5%;
     left: 30px; /* 적절한 값으로 조정 */
-    background: url(../img/left.png) center center / 30% no-repeat;
+    background: url(../img/musicplayer-left.png) center center / 30% no-repeat;
 }
 
 .musicplayer-section .slide-control label.musicplayer-right {
     margin-top: 70%;
+    width: 5%;
     right: 30px; /* 적절한 값으로 조정 */
-    background: url(../img/right.png) center center / 30% no-repeat;
+    background: url(../img/musicplayer-right.png) center center / 30% no-repeat;
 }
 
 
