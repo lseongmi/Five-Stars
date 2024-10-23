@@ -1,0 +1,38 @@
+.player-main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-top: 4rem;
+    row-gap: 10rem;
+}
+
+.player-profile {
+    position: relative; /* 부모 요소에 position: relative 추가 */
+    display: flex;
+    column-gap: 10rem;
+    align-items: center; /* 이미지와 텍스트가 가운데 정렬 */
+    line-height: 50px;
+}
+
+.player-profile > .player-image {
+    border: 1px solid #F20505;
+}
+
+.player-name {
+    display: flex;
+    column-gap: 30px;
+    font-size: 20px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.player-image {
+    width: 30%;
+}
+
+.player-line {
+    position: absolute;
+    left: 20%;
+    top: 65%; /* 이미지와 겹치는 위치 조정 */
+    width: 15%;
+}

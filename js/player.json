@@ -5,7 +5,9 @@
         "ID": "God Thunder#dufma",
         "height":"177.7cm",
         "age":"2004.01.31",
-        "line":"탑 라이너"
+        "line":"탑 라이너",
+        "img":"Zeus.png",
+        "lineimg":"탑.png"
     },
     {
         "nickname":"Oner",
@@ -13,7 +15,10 @@
         "ID": "Oner#KR222",
         "height":"178cm",
         "age":"2002.12.24",
-        "line":"정글러"
+        "line":"정글러",
+        "img":"Oner.png",
+        "lineimg":"정글.png"
+        
     },
     {
         "nickname":"Faker",
@@ -21,7 +26,9 @@
         "ID": "Hide on bush#KR1",
         "height":"177cm",
         "age":"1996.05.07",
-        "line":"미드 라이너"
+        "line":"미드 라이너",
+        "img":"Faker.png",
+        "lineimg":"미드.png"
     },
     {
         "nickname":"Gumayusi",
@@ -29,7 +36,9 @@
         "ID": "T1 Gumayusi#KR1",
         "height":"181cm",
         "age":"2002.02.06",
-        "line":"바텀 라이너"
+        "line":"바텀 라이너",
+        "img":"Gumayusi.png",
+        "lineimg":"바텀.png"
     },
     {
         "nickname":"Keria",
@@ -37,6 +46,8 @@
         "ID": "역천괴#Ker10",
         "height":"165cm",
         "age":"2002.10.14",
-        "line":"서포터"
+        "line":"서포터",
+        "img":"Keria.png",
+        "lineimg":"서포터.png"
     }
 ]
