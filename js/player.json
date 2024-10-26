@@ -7,7 +7,8 @@
         "age":"2004.01.31",
         "line":"탑 라이너",
         "img":"Zeus.png",
-        "lineimg":"탑.png"
+        "lineimg":"탑.png",
+        "html":"zeus.html"
     },
     {
         "nickname":"Oner",
@@ -17,7 +18,8 @@
         "age":"2002.12.24",
         "line":"정글러",
         "img":"Oner.png",
-        "lineimg":"정글.png"
+        "lineimg":"정글.png",
+        "html":"oner.html"
         
     },
     {
@@ -28,7 +30,8 @@
         "age":"1996.05.07",
         "line":"미드 라이너",
         "img":"Faker.png",
-        "lineimg":"미드.png"
+        "lineimg":"미드.png",
+        "html":"mid.html"
     },
     {
         "nickname":"Gumayusi",
@@ -38,7 +41,8 @@
         "age":"2002.02.06",
         "line":"바텀 라이너",
         "img":"Gumayusi.png",
-        "lineimg":"바텀.png"
+        "lineimg":"바텀.png",
+        "html":"bottom.html"
     },
     {
         "nickname":"Keria",
@@ -48,6 +52,7 @@
         "age":"2002.10.14",
         "line":"서포터",
         "img":"Keria.png",
-        "lineimg":"서포터.png"
+        "lineimg":"서포터.png",
+        "html":"supporter.html"
     }
 ]
