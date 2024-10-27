@@ -1,0 +1,55 @@
+.player-container {
+    margin-top: 10rem;
+    margin-bottom: 50%;
+}
+
+.player-profile {
+    display: flex;
+    position: relative;
+    gap: 10%;
+    justify-content: center;
+}
+
+.player-image {
+    width: 30%;
+    position: relative;
+}
+
+.player-line {
+    position: absolute;
+    width: 13%;
+    top: 75%;
+    left: 47%;
+}
+
+.player-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-name {
+    display: flex;
+}
+
+.news {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.news > img {
+    width: 90%;
+}
+
+.musicplayer-link  > a{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 10rem;
+    text-decoration: none;
+    color: black;
+}
+
