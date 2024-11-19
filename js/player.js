@@ -1,5 +1,4 @@
 
-let allData;
 const playermain = document.getElementsByClassName("player-main")[0];
 const showData = ((data) => {
     // data 하나씩 뽑아서 <article> -> .product-container의 자식으로 넣자 <-HTML
@@ -26,7 +25,7 @@ const showData = ((data) => {
 });
 
 const setData = ((data) => {
-    allData = data;
+
     showData(data);
 });
 
