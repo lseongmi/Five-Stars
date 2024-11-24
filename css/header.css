@@ -67,17 +67,12 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20%;
+    margin-right: 50%;
 }
 
 .t1-rogo > img {
     width: 80%;
-}
 
-.login {
-    font-size: 10px;
-    display: flex;
-    margin-right: 10px;
 }
 
 .section > div{
@@ -155,13 +150,13 @@ nav {
 .section .slidelist .left {
     /* 왼쪽 기준 30, 화살표 이미지 삽입 */
     left: 10px;
-    background: url(../img/left.png) center center / 30% no-repeat;
+    background: url(../img/left.png) center center / 20% no-repeat;
 }
 
 .section .slidelist .right {
     /* 오른쪽 기준 30, 화살표 이미지 삽입 */
     right: 10px;
-   background: url(../img/right.png) center center / 30% no-repeat;
+   background: url(../img/right.png) center center / 20% no-repeat;
 } 
 /* 체크가 되면 li의 대해 스타일을 부여, 자신을 기준으로 x = 0; 이 값으로 첫번째가 체크가 되면 보여지게 된다. */
 .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
@@ -225,9 +220,34 @@ hr {
     font-size: 25px;
 }
 
+@media screen and (max-width: 1155px) {
+    .header-text {
+        font-size: 20px;
+    }
+    .t1-rogo {
+        justify-content: flex-end;
+        margin-right: 5%;
+    }
+  
+
+}
+
+
 @media screen and (max-width: 600px) {
-    .show-menu {
-        display: block;
+    .header-text {
+        font-size: 10px;
+    }
+ 
+    .dots > .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .t1-rogo {
+        display: none;
+    }
+    #nav-header > div > div{
+        font-size: 18px;
     }
 }
 

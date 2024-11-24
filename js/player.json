@@ -1,15 +1,15 @@
 [
     {
-        "nickname":"Zeus",
-        "Name":"최우제",
-        "Id": "God Thunder#dufma",
-        "height":"177.7cm",
-        "age":"2004.01.31",
-        "year":"2004",
+        "nickname":"Doran",
+        "Name":"최현준",
+        "Id": "어리고싶다 #KR1",
+        "height":"182cm",
+        "age":"2000.07.22",
+        "year":"2000",
         "line":"탑 라이너",
-        "img":"Zeus.png",
+        "img":"Doran.png",
         "lineimg":"탑.png",
-        "html":"zeus.html"
+        "html":"Doran.html"
     },
     {
         "nickname":"Oner",

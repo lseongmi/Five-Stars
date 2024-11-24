@@ -83,40 +83,32 @@ main > .main > .title > div {
     background: url(../img/musicplayer-right.png) center center / 30% no-repeat;
 }
 
-
-/* 각 슬라이드 체크 시 이동 */
-.musicplayer-section input[id=musicplayer-slide01]:checked ~ .musicplayer-slidewrap .musicplayer-slidelist > li {
+.musicplayer-section input[id=musicplayer-slide02]:checked ~ .musicplayer-slidewrap .musicplayer-slidelist > li {
     transform: translateX(0%);
 }
-.musicplayer-section input[id=musicplayer-slide02]:checked ~ .musicplayer-slidewrap .musicplayer-slidelist > li {
+.musicplayer-section input[id=musicplayer-slide03]:checked ~ .musicplayer-slidewrap .musicplayer-slidelist > li {
     transform: translateX(-100%);
 }
-.musicplayer-section input[id=musicplayer-slide03]:checked ~ .musicplayer-slidewrap .musicplayer-slidelist > li {
+.musicplayer-section input[id=musicplayer-slide04]:checked ~ .musicplayer-slidewrap .musicplayer-slidelist > li {
     transform: translateX(-200%);
 }
-.musicplayer-section input[id=musicplayer-slide04]:checked ~ .musicplayer-slidewrap .musicplayer-slidelist > li {
+.musicplayer-section input[id=musicplayer-slide05]:checked ~ .musicplayer-slidewrap .musicplayer-slidelist > li {
     transform: translateX(-300%);
 }
-.musicplayer-section input[id=musicplayer-slide05]:checked ~ .musicplayer-slidewrap .musicplayer-slidelist > li {
-    transform: translateX(-400%);
-}
 
-/* 각 슬라이드에 맞는 control 표시 */
+/* 컨트롤 표시 수정 */
 .musicplayer-section .slide-control [class*="control"] {
     display: none;
 }
-.musicplayer-section [id=musicplayer-slide01]:checked ~ .musicplayer-slidewrap .control01 {
+.musicplayer-section [id=musicplayer-slide02]:checked ~ .musicplayer-slidewrap .control01 {
     display: block;
 }
-.musicplayer-section [id=musicplayer-slide02]:checked ~ .musicplayer-slidewrap .control02 {
+.musicplayer-section [id=musicplayer-slide03]:checked ~ .musicplayer-slidewrap .control02 {
     display: block;
 }
-.musicplayer-section [id=musicplayer-slide03]:checked ~ .musicplayer-slidewrap .control03 {
+.musicplayer-section [id=musicplayer-slide04]:checked ~ .musicplayer-slidewrap .control03 {
     display: block;
 }
-.musicplayer-section [id=musicplayer-slide04]:checked ~ .musicplayer-slidewrap .control04 {
-    display: block;
-}
-.musicplayer-section [id=musicplayer-slide05]:checked ~ .musicplayer-slidewrap .control05 {
+.musicplayer-section [id=musicplayer-slide05]:checked ~ .musicplayer-slidewrap .control04 {
     display: block;
 }
