@@ -36,7 +36,6 @@ nav {
     flex-direction: column; /* 리스트 항목을 수직으로 배치 */
     row-gap: 25px;
     position: absolute; /* 부모 요소 내에서 위치 고정 */
-    width: 8%; /* 원하는 너비로 설정 */
     height: 20%;
     background-color: #fff;
     list-style: none;
@@ -248,6 +247,9 @@ hr {
     }
     #nav-header > div > div{
         font-size: 18px;
+    }
+    .nav-item-details {
+        height: 9rem;
     }
 }
 
