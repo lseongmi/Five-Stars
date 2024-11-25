@@ -45,8 +45,8 @@
     font-size: 20px;
 } 
 
-.news > img {
-    width: 90%;
+.news > a > img {
+    width: 100%;
 }
 
 .musicplayer-link  > a{
@@ -56,5 +56,21 @@
     margin-bottom: 10rem;
     text-decoration: none;
     color: black;
+}
+
+@media screen and (max-width: 800px) {
+    .player-profile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+    }
+    .player-line {
+        top: 40%;
+        left: 60%;
+    }
+    .player-image {
+        width: 40%;
+    }
 }
 
