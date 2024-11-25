@@ -34,7 +34,7 @@
         "line":"미드 라이너",
         "img":"Faker.png",
         "lineimg":"미드.png",
-        "html":"mid.html"
+        "html":"faker.html"
     },
     {
         "nickname":"Gumayusi",
@@ -46,7 +46,7 @@
         "line":"바텀 라이너",
         "img":"Gumayusi.png",
         "lineimg":"바텀.png",
-        "html":"bottom.html"
+        "html":"gumayusi.html"
     },
     {
         "nickname":"Keria",
@@ -58,6 +58,6 @@
         "line":"서포터",
         "img":"Keria.png",
         "lineimg":"서포터.png",
-        "html":"supporter.html"
+        "html":"keria.html"
     }
 ]

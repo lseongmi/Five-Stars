@@ -112,3 +112,29 @@ main > .main > .title > div {
 .musicplayer-section [id=musicplayer-slide05]:checked ~ .musicplayer-slidewrap .control04 {
     display: block;
 }
+
+@media screen and (max-width: 1230px) {
+    .musicplayer-section .slide-control label .musicplayer-left, .musicplayer-left{
+        top: 70%;
+    }
+    .musicplayer-section .slide-control label.musicplayer-left {
+        margin-top: 75%;
+    }
+    
+    .musicplayer-section .slide-control label.musicplayer-right {
+        margin-top: 75%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .musicplayer-section .lyrics {
+        font-size: 15px;
+    }
+    .musicplayer-section .slide-control label.musicplayer-left {
+       left: -5%;
+    }
+    
+    .musicplayer-section .slide-control label.musicplayer-right {
+        left: 80%;
+    }
+}
