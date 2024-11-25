@@ -10,3 +10,14 @@
     gap: 50px;
     margin-bottom: 10rem;
 }
+
+@media screen and (max-width: 1000px) {
+    .header-pog, .downheader-pog {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-pog > div > img, .downheader-pog > div > img {
+        width: 70%;
+    }
+}
