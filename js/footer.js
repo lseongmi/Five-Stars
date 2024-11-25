@@ -16,8 +16,6 @@ footertitles.forEach((title) => {
             } else {
                 footerContent.style.display = "none"; // 닫기
             }
-        } else {
-            console.error("footer-content가 발견되지 않았습니다.");
         }
     });
 });

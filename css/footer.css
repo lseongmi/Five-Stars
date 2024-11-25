@@ -73,20 +73,11 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    .header-text {
-        font-size: 10px;
-    }
- 
-    .dots > .dot {
-        width: 15px;
-        height: 15px;
-    }
-
-    .left > img, .right > img {
-        width: 10px;
-    }
-
-    .t1-rogo {
+    .footer-info > p {
         display: none;
     }
+    .footer-category {
+        margin-left: 80px;
+    }
+ 
 }
