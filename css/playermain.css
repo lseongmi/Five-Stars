@@ -36,3 +36,23 @@
     top: 65%; /* 이미지와 겹치는 위치 조정 */
     width: 15%;
 }
+
+.player-main-section {
+    margin-bottom: 11rem;
+}
+
+@media screen and (max-width: 800px) {
+    .player-main {
+        margin-left: 0px;
+    }
+    .player-line {
+        top: 30%;
+        left: 55%;
+    }
+    .player-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 50px;
+    }
+}
