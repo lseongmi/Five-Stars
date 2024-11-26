@@ -1,0 +1,55 @@
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.year-title {
+    margin-top: 10rem;
+    margin-bottom: 10px;
+}
+
+.player-history {
+    flex: 1 1 calc(33.333% - 10px); 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.player-history > img {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.player-history-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.win-section {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.win-section > img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+/* 반응형 디자인 */
+@media screen and (max-width: 1000px) {
+    .player-history, .win-section {
+        flex: 1 1 calc(50% - 20px); /* 2단 */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .player-history, .win-section {
+        flex: 1 1 100%; /* 1단 */
+    }
+}
