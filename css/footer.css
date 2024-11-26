@@ -79,5 +79,17 @@ footer {
     .footer-category {
         margin-left: 80px;
     }
- 
+    .footer-content {
+        font-size: 10px;
+    }
+    .SNS-img > a > div > img {
+        width: 30px;
+    }
+    .youtube > img {
+        width: 20px;
+    }
+    .footer-title {
+        font-size: 12px;
+    }
+
 }
