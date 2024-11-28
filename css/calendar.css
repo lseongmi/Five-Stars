@@ -5,6 +5,7 @@
   align-items: center;
   margin-bottom: 10rem;
   flex-direction: column;
+  position: relative;
 }
 
 .calendar-container {
@@ -122,9 +123,42 @@ a {
 }
 
 .schedule-section {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 30px;
   margin-bottom: 60px;
 }
 
+.schedule-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+
+}
+
+#popup {
+  border: 1px solid #000;
+  padding: 5rem;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 40%;
+  display: none;
+}
+
+.schedule-input > input {
+  border: 1px solid black;
+  height: 1rem;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+button {
+  width: 10rem;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 15px;
+  background-color: #F20505;
+  color: white;
+  padding: 5px;
+  border: 1px solid #F20505;
+}
