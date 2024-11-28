@@ -21,6 +21,10 @@
   margin-bottom: 10px;
 }
 
+.calendar-header  > img {
+  width: 8%;
+}
+
 .calendar-days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -161,4 +165,22 @@ button {
   color: white;
   padding: 5px;
   border: 1px solid #F20505;
+}
+
+@media screen and (max-width: 1000px) {
+  .schedule-container {
+      width: 50%;
+  }
+  .schedule-section > li {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .schedule-container {
+      width: 60%;
+  }
+  .schedule-section > li {
+    font-size: 13px;
+  }
 }
