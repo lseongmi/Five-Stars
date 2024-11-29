@@ -7,19 +7,24 @@
     margin-bottom: 20rem;
 }
 
-.logo-history > .logo-img {
+.uplogo, .downlogo {
+    display: flex;
+    gap: 90px;
+}
+
+.logo-history  .logo-img {
     text-align: center;
 }
 
-.logo-history > .logo-img > img {
+.logo-history  .logo-img > img {
    width: 100%;
 }
 
-.logo-history > .logo-img > div {
+.logo-history  .logo-img > div {
    margin-top: 10%;
 }
 
-.logo-history > .logo-img > .logo-2019 {
+.logo-history  .logo-img > .logo-2019 {
     margin-top: 20%;
 }
 
@@ -42,6 +47,27 @@
 
 #lcksummer {
     margin-bottom: 15rem;
+}
+
+@media screen and (max-width: 800px) {
+    .logo-history {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo-history {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+    }
+    .uplogo, .downlogo {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 
