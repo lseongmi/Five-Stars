@@ -73,14 +73,14 @@ main > .main > .title > div {
     margin-top: 70%;
     width: 5%;
     left: 30px; /* 적절한 값으로 조정 */
-    background: url(../img/musicplayer-left.png) center center / 30% no-repeat;
+    background: url(../img/musicplayer-left.png) center center / 20% no-repeat;
 }
 
 .musicplayer-section .slide-control label.musicplayer-right {
     margin-top: 70%;
     width: 5%;
     right: 30px; /* 적절한 값으로 조정 */
-    background: url(../img/musicplayer-right.png) center center / 30% no-repeat;
+    background: url(../img/musicplayer-right.png) center center / 20% no-repeat;
 }
 
 .musicplayer-section input[id=musicplayer-slide02]:checked ~ .musicplayer-slidewrap .musicplayer-slidelist > li {
